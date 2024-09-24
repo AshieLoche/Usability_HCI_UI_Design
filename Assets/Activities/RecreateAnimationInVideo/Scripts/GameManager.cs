@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
             GameObject card = Instantiate(_blackCards[Random.Range(0, _blackCards.Count)], _markers[i].position, Quaternion.Euler(new Vector3(0f, 0f, 180f)));
             card.transform.localScale = new Vector3(1f, 1f, 1f);
             card.transform.parent = _card;
-            card.AddComponent<RecreateAnimationInVideo>();
+            card.AddComponent<CardAnimation>();
             card.AddComponent<BoxCollider>();
             BoxCollider _boxCollider = card.GetComponent<BoxCollider>();
             _boxCollider.size = new Vector3(5.7f, 0.025f, 8.85f);
@@ -35,29 +35,29 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit))
-        {
+        //if (Physics.Raycast(ray, out hit))
+        //{
 
-            foreach (GameObject cardDeck in _cardDecks)
-            {
+        //    foreach (GameObject cardDeck in _cardDecks)
+        //    {
 
-                if (hit.transform.gameObject == cardDeck)
-                {
-                    Material owo = cardDeck.GetComponent<Renderer>().material;
-                    owo.DOColor(Color.grey, 0.5f);
-                }
-                else
-                {
-                    Material owo = cardDeck.GetComponent<Renderer>().material;
-                    owo.DOColor(Color.white, 0.5f);
-                }
+        //        if (hit.transform.gameObject == cardDeck)
+        //        {
+        //            Material owo = cardDeck.GetComponent<Renderer>().material;
+        //            owo.DOColor(Color.grey, 0.5f);
+        //        }
+        //        else
+        //        {
+        //            Material owo = cardDeck.GetComponent<Renderer>().material;
+        //            owo.DOColor(Color.white, 0.5f);
+        //        }
 
-            }
+        //    }
 
-        }
+        //}
 
     }
 

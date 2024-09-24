@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class RecreateAnimationInVideo : MonoBehaviour
+public class CardAnimation : MonoBehaviour
 {
 
     private Camera _camera;
     private bool _clicked;
+
+    void Start()
+    {
+        _clicked = false;
+        _camera = Camera.main;
+    }
 
     private void OnMouseOver()
     {
@@ -29,13 +35,6 @@ public class RecreateAnimationInVideo : MonoBehaviour
 
         transform.DOScale(new Vector3(1f, 1f, 1f), 0.5f);
 
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        _clicked = false;
-        _camera = Camera.main;
     }
 
 }
