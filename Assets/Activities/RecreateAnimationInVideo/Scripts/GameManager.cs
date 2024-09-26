@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < _markers.Count; i++)
         {
 
             GameObject card = Instantiate(_blackCards[Random.Range(0, _blackCards.Count)], _markers[i].position, Quaternion.Euler(new Vector3(0f, 0f, 180f)));
