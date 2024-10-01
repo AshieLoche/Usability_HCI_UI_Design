@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73298dedf854d7442850977975e66a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIManager: {fileID: 2053189154}
+  _uIManager: {fileID: 2053189154}
 --- !u!1 &2038566489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,10 +1028,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a3bb2c6beac0bb4197262fed317063d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
-  maxSize: 0.75
-  defaultSize: 1
-  animationTime: 0.25
+  _targetObject: {fileID: 0}
+  _maxSize: 0.75
+  _defaultSize: 1
+  _animationTime: 0.25
 --- !u!4 &2053189155
 Transform:
   m_ObjectHideFlags: 0
@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73298dedf854d7442850977975e66a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uIManager: {fileID: 2053189154}
+  _uIManager: {fileID: 2053189154}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

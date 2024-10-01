@@ -7,18 +7,18 @@ using UnityEngine.Events;
 public class Week1n2_UIBehaviour : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
-    public Week1n2_UIManager uIManager;
+    [SerializeField] private Week1n2_UIManager _uIManager;
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        uIManager.SetTartgetObject(gameObject);
-        uIManager.IncreaseSize();
+        _uIManager.SetTartgetObject(gameObject);
+        _uIManager.IncreaseSize();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        uIManager.DecreaseSize();
-        uIManager.SetTartgetObject(null);
+        _uIManager.DecreaseSize();
+        _uIManager.SetTartgetObject(null);
     }
 
 }

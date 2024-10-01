@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HPBarPlacement : MonoBehaviour
+public class Week5_HPBarPlacement : MonoBehaviour
 {
 
     [SerializeField] private GameObject hpBarPrefab, hpBar;

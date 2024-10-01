@@ -6,23 +6,23 @@ using UnityEngine;
 public class Week1n2_UIManager : MonoBehaviour
 {
 
-    [SerializeField] private GameObject targetObject;
-    [SerializeField] private float maxSize, defaultSize;
-    [SerializeField] private float animationTime;
+    [SerializeField] private GameObject _targetObject;
+    [SerializeField] private float _maxSize, _defaultSize;
+    [SerializeField] private float _animationTime;
 
     public void IncreaseSize()
     {
-        targetObject.transform.DOScale(maxSize, animationTime);
+        _targetObject.transform.DOScale(_maxSize, _animationTime);
     }
 
     public void DecreaseSize()
     {
-        targetObject.transform.DOScale(defaultSize, animationTime);
+        _targetObject.transform.DOScale(_defaultSize, _animationTime);
     }
 
     public void SetTartgetObject(GameObject targetObject)
     {
-        this.targetObject = targetObject;
+        _targetObject = targetObject;
     }
 
 }

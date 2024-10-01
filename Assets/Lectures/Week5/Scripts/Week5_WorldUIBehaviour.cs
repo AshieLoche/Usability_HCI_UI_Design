@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public partial class WorldUIBehaviour : MonoBehaviour
+public partial class Week5_WorldUIBehaviour : MonoBehaviour
 {
 
     [SerializeField] private enum BillboardType
